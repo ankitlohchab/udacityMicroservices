@@ -19,10 +19,10 @@ You need to install:
 
 Test that your installation was Successful with the following commands:
 
-`docker --version`
-`aws --version`
-`minikube version`
-`kubectl version --short --client`
+* `docker --version`
+* `aws --version`
+* `minikube version`
+* `kubectl version --short --client`
 
 ![Version](https://github.com/ankitlohchab/udacityMicroservices/blob/master/screenshots/Version.png)
 
@@ -30,14 +30,16 @@ Test that your installation was Successful with the following commands:
 
 Copy and Paste the variables with your values:
 
-```export POSTGRESS_USERNAME=your postgress username;
+```
+export POSTGRESS_USERNAME=your postgress username;
 export POSTGRESS_PASSWORD=your postgress password;
 export POSTGRESS_DATABASE=your postgress database;
 export POSTGRESS_HOST=your postgress host;
 export AWS_REGION=your aws region;
 export AWS_PROFILE=your aws profile;
 export AWS_BUCKET=your aws bucket name;
-export JWT_SECRET=your jwt secret;```
+export JWT_SECRET=your jwt secret;
+```
 
 ## Setup Docker Enviroment
 
@@ -107,8 +109,10 @@ Use Port Forwarding to the Frontend and Reverse Proxy services:
 
 > Note: The port forwarding must be done in Separate terminals, to run both services at the same time.
 
-```kubectl port-forward service/frontend 8100:8100
-kubectl port-forward service/reverseproxy 8080:8080```
+```
+kubectl port-forward service/frontend 8100:8100
+kubectl port-forward service/reverseproxy 8080:8080
+```
 
 ## Open your browser
 
@@ -146,7 +150,7 @@ before_install:
 install:
   - docker-compose -f udacity-c3-deployment/docker/docker-compose-build.yaml build --parallel 
   
-  ```
+ ```
   
 Add your environment variables to the project repository in TravisCI by selecting the setting option.
 

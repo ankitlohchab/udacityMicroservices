@@ -2,6 +2,16 @@
 
 Udacity Cloud Developer Nanodegree
 
+## Repositories
+
+* [GitHub Repo](https://github.com/ankitlohchab/udacityMicroservices)
+* [DockerHub Repo - FrontEnd](https://hub.docker.com/repository/docker/ankitlohchab/udacity-frontend) 
+* [DockerHub Repo - Feed](https://hub.docker.com/repository/docker/ankitlohchab/udacity-restapi-feed) 
+* [DockerHub Repo - User](https://hub.docker.com/repository/docker/ankitlohchab/udacity-restapi-user) 
+* [DockerHub Repo - ReverseProxy](https://hub.docker.com/repository/docker/ankitlohchab/reverseproxy) 
+
+> udacity-frontend repo contain 2 images for `A/B deployment of the application`
+
 ## Getting Started
 
 Udagram is a simple cloud application developed alongside the Udacity Cloud Engineering Nanodegree. It allows users to register and log into a web client, post photos to the feed, and process photos using an image filtering microservice.
